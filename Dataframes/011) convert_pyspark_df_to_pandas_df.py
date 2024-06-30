@@ -13,3 +13,6 @@ df=rdd.toDF(column_names)
 pandas_df=df.toPandas()
 
 pandas_df.head()
+
+
+# after converting a pyspark dataframe into pandas dataframe , only pandas functions will be applicable
