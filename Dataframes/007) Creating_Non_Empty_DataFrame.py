@@ -6,7 +6,14 @@ from pyspark.sql.types import StringType, StructType , StructField
 
 data=[('Peter','Parker',30),('Tony','Stark',40)]
 
-df=spark.createDataFrame(data)
+# don't forget to convert this into rdd first 
+
+my_rdd=spark.sparkContext.parallelize(data)
+
+# the input of the createDataFrame() or toDF should be a rdd.
+# Even if it we just put a list, it will still work, but do not do like that... first create rdd.
+
+df=spark.createDataFrame(my_rdd)
 
 df.printSchema()
 
