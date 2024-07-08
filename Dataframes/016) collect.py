@@ -15,3 +15,12 @@ df.collect()
 
 # As you can see in the above function that collect() returns an array.
 
+# How to access various elements of the array ?
+
+# Since the arrays are indexable , we can point out to specific values as well.
+
+df.collect()[0]
+# the above statement returns the first row.
+
+df.collect()[0][0]
+# the above statement returns the value at first row and first column.
