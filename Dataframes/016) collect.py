@@ -12,3 +12,6 @@ df.show()
 df.collect()
 
 # Out[5]: [Row(name='Peter', roll=1), Row(name='Parker', roll=2)]
+
+# As you can see in the above function that collect() returns an array.
+
