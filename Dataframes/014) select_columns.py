@@ -1,7 +1,5 @@
 data=[('Peter','Parker',12),('Tony','Stark',14)]
 
-rdd=spark.sparkContext.parallelize(data)
-
 column_names=['firstname','lastname','Age']
 df=spark.createDataFrame(data,column_names)
 
