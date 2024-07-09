@@ -26,3 +26,18 @@ df.collect()[0]
 df.collect()[0][0]
 # Out[6]: 'Peter'
 # the above statement returns the value at first row and first column.
+
+
+# Can we assign collect to some variables and print each row separately ?
+# Yes
+
+collection=df.collect()
+# collection.show() --This won't work because collect returns a list and not a dataframe . So show is valid for a dataframe 
+# but not a list 
+
+print(collection)
+
+# or 
+
+for value in collection:
+  print(value)
