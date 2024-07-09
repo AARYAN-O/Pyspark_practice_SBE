@@ -41,3 +41,11 @@ print(collection)
 
 for value in collection:
   print(value)
+
+
+# collect with select 
+# we can use select before collect to filter out all the columns that are needed.
+
+collection=df.select('name').collect()
+print(collection)
+# [Row(name='Peter'), Row(name='Parker')]
