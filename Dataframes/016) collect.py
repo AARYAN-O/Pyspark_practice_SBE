@@ -7,7 +7,9 @@ df=spark.createDataFrame(data,col_names)
 
 df.show()
 
-# Note : collect() should only be applied in case we have smaller data.
+# Note : Usually, collect() is used to retrieve the action output when you have very small result set and calling 
+# collect() on an RDD/DataFrame with a bigger result set causes out of memory as it returns the entire dataset 
+# (from all workers) to the driver hence we should avoid calling collect() on a larger dataset.
 
 df.collect()
 
