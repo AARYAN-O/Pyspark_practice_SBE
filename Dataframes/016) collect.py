@@ -20,7 +20,9 @@ df.collect()
 # Since the arrays are indexable , we can point out to specific values as well.
 
 df.collect()[0]
+# Row(name='Peter', roll=1)
 # the above statement returns the first row.
 
 df.collect()[0][0]
+# Out[6]: 'Peter'
 # the above statement returns the value at first row and first column.
