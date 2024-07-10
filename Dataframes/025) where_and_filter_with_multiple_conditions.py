@@ -8,6 +8,7 @@ df=spark.createDataFrame(data,col_names)
 
 df.show()
 
+# using & operator 
 df1=df.where((df.Age==16) & (df.Roll==124))
 
 df1.show()
@@ -15,3 +16,9 @@ df1.show()
 df2=df.filter((df.Age==16) & (df.Roll==124))
 
 df2.show()
+
+# using | operator 
+
+df3=df.filter((df.Age==16) | (df.Roll==122))
+
+df3.show()
