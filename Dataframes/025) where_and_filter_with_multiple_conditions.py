@@ -11,3 +11,7 @@ df.show()
 df1=df.where((df.Age==16) & (df.Roll==124))
 
 df1.show()
+
+df2=df.filter((df.Age==16) & (df.Roll==124))
+
+df2.show()
