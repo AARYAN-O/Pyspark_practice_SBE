@@ -1,6 +1,9 @@
 emptyRDD=spark.sparkContext.parallelize([])
 print(emptyRDD)
 
+# What is the use of parallelize in pyspark ?
+# Parallelize is used for creating RDD
+
 from pyspark.sql.types import StructType,StructField,StringType
 # all the things related to struct are usually present inside the pyspark.sql
 # StructType is used for creating schema.
