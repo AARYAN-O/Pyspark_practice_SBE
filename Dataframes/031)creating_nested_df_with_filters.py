@@ -19,7 +19,7 @@ print(df.Marks_in_all_subjects)
 
 # Note the line 18 will give us error because ,filter cannot be applied on the array types.
 
-But filters can be applied on more scalar datatypes 
+# But filters can be applied on more scalar datatypes 
 
 print(df.filter(df.Person=="Person1"))
 
