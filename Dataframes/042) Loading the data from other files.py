@@ -5,3 +5,4 @@ df=spark.read.format("csv").option("header","true").load("dbfs:/FileStore/bank_c
 df.show()
 df.createOrReplaceTempView("EMP")
 spark.sql("select * from EMP").show()
+spark.sql("select cust_id,cust_fname from EMP").show()
