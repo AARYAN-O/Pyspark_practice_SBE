@@ -6,3 +6,5 @@ df.display()
 df=df.withColumn("Profit",col("Profit").cast("Integer"))
 
 df.groupBy("Country").mean().display()
+
+df.groupBy("Country").avg().display()
