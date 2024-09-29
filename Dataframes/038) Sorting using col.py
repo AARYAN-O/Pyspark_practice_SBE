@@ -1,6 +1,8 @@
 from pyspark.sql.types import StringType,IntegerType,StructType,StructField
 from pyspark.sql.functions import col
 
+# By default ,the sorting in pyspark takes place in ascending order.
+
 schema=StructType([StructField('Person',StringType(),True),StructField('Roll_No',IntegerType(),True)])
 
 data=[('Person2',12),('Person1',14)]
