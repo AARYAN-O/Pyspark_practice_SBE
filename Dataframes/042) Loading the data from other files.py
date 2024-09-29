@@ -3,3 +3,5 @@
 
 df=spark.read.format("csv").option("header","true").load("dbfs:/FileStore/bank_customer.csv")
 df.show()
+df.createOrReplaceTempView("EMP")
+spark.sql("select * from EMP").show()
