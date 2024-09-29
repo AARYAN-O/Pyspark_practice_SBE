@@ -1,0 +1,7 @@
+# inner	                              INNER JOIN
+# outer, full, fullouter, full_outer	FULL OUTER JOIN
+# left, leftouter, left_outer       	LEFT JOIN
+# right, rightouter, right_outer	    RIGHT JOIN
+# cross	
+# anti, leftanti, left_anti	
+# semi, leftsemi, left_semi	
