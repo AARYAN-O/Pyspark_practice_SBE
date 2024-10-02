@@ -5,3 +5,6 @@
 # cross	
 # anti, leftanti, left_anti	
 # semi, leftsemi, left_semi	
+
+
+# lts in pyspark stands for last minor release 
