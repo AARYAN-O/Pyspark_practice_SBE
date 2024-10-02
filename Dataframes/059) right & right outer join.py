@@ -21,10 +21,10 @@ deptDF = spark.createDataFrame(data=dept, schema = deptColumns)
 deptDF.show(truncate=False)
 
 joined_df1=deptDF.join(empDF,deptDF.dept_id==empDF.emp_dept_id,"right")
-joined_df.display()
+joined_df1.display()
 
 joined_df2=deptDF.join(empDF,empDF.emp_dept_id==deptDF.dept_id,"rightouter")
-joined_df.display()
+joined_df1.display()
 
 # note that the above does not give equal because in pyspark, the value inside the dataframes is not compared.
 # Rather the objects are compared.
