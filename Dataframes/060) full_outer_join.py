@@ -24,7 +24,7 @@ joined_df1=deptDF.join(empDF,deptDF.dept_id==empDF.emp_dept_id,"outer")
 joined_df1.display()
 
 joined_df2=deptDF.join(empDF,empDF.emp_dept_id==deptDF.dept_id,"fullouter")
-joined_df.display()
+joined_df2.display()
 
 joined_df3=deptDF.join(empDF,empDF.emp_dept_id==deptDF.dept_id,"full")
 joined_df3.display()
