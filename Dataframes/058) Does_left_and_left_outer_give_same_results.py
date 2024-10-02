@@ -21,9 +21,9 @@ deptDF = spark.createDataFrame(data=dept, schema = deptColumns)
 deptDF.show(truncate=False)
 
 joined_df1=deptDF.join(empDF,deptDF.dept_id==empDF.emp_dept_id,"left")
-joined_df.display()
+joined_df1.display()
 
 joined_df2=deptDF.join(empDF,empDF.emp_dept_id==deptDF.dept_id,"left")
-joined_df.display()
+joined_df2.display()
 
 # left and left outer gives exactly the same results
