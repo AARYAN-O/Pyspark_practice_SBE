@@ -18,5 +18,5 @@ deptColumns = ["dept_name","dept_id"]
 deptDF1 = spark.createDataFrame(data=dept1, schema = deptColumns)
 deptDF1.show(truncate=False)
 
-unioned_DF=deptDF.unionAll(deptDF1).distinct()
+unioned_DF=deptDF.union(deptDF1).distinct()
 unioned_DF.display()
