@@ -3,6 +3,8 @@
 # spark.udf.register (name , function ,returntype)
 # note that the register function returns the udf.
 
+# Note : UDFs are error prone and hence the errors in UDFs need to be handled properly.
+
 from pyspark.sql.functions import udf
 from pyspark.sql.types import StringType
 
