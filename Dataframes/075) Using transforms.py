@@ -2,6 +2,10 @@
 # Since df is not a string even if the values inside it are of string type , we cannot really do something like df["title"]+"x"
 # or for that matter we cannot even do df["title"]+lit("x")
 
+# what is the use of transforms ?
+# The use of transforms is to apply multiple functions/transformations on the dataframes one after the other.
+
+
 
 from pyspark.sql.functions import lit,concat
 
