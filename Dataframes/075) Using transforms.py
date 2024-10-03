@@ -5,6 +5,8 @@
 # what is the use of transforms ?
 # The use of transforms is to apply multiple functions/transformations on the dataframes one after the other.
 
+# MOST IMPORTANT THING ABOUT THIS IS THAT WE NEED TO APPLY TRANSFORM ONLY ON THOSE COLUMNS THAT CONTAIN VALUES IN 
+# THE FORM OF ARRAYS.
 
 
 from pyspark.sql.functions import lit,concat
