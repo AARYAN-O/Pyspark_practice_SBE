@@ -1,5 +1,5 @@
 # map function is used to apply a function to each and every value of the dataframe.
-# Note : The map() can be used for both rdds and dataframes
+# Note : The map() can be used for only rdds and not dataframes
 
 def func(x):
     x=x+"h"
