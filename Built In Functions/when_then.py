@@ -5,4 +5,6 @@ df=spark.read.format("csv").option("header","true").load("dbfs:/FileStore/movies
 df.display()
 df1=df.withColumn("new_column",when(df.genres=="Adventure|Animation|Children|Comedy|Fantasy","found adventure").otherwise("not found adventure"))
 
+#The dataframe is usually used with withColumn()
+
 df1.display()
