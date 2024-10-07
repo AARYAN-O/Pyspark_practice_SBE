@@ -1,0 +1,2 @@
+The select statement must be used when we just want to query the data without actually causing any changes in the data
+while withColumn is used to actually cause the changes in the data 
