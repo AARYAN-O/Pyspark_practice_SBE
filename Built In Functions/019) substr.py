@@ -7,3 +7,5 @@ df.display()
 df=df.withColumn("new_title",col("title").substr(2,10))
 
 df.display()
+
+# note that all the below pyspark dataframes would stop working if the current ones stops working
