@@ -5,3 +5,5 @@ df=spark.read.format("csv").option("header","true").load("dbfs:/FileStore/movies
 df=df.withColumn("genres",when(col('genres').endswith('sy'),regexp_replace(df.genres,'Adventure\|Animation\|Children\|Comedy\|Fantasy','okish')).otherwise('default'))
 
 df.display()
+
+# startwith and endswith are very important in python
