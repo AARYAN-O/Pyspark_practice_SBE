@@ -11,3 +11,4 @@ df.select(expr("title"),expr("genres")).display()
 df.selectExpr("title","genres").display()
 
 # So the conclusion is that expr is used on each column where as selectExpr can be used on multiple columns.
+# Note that selectExpr is already present by default in pyspark and we dont need to explicitly define it.
