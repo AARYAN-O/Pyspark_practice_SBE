@@ -11,6 +11,8 @@ df.printSchema()
 
 df=df.withColumn("new_column",to_timestamp("date",format="dd MMM yyyy hh:mm:ss"))
 
+# Note : The format parameter is an optional parameter
+
 # df.display()
 
 df.printSchema()
