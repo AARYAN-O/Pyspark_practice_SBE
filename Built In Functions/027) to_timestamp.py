@@ -20,5 +20,5 @@ df.printSchema()
 # timestamp has a specific format only 
 # So to_timestamp helps us convert any string into that format.
 
-See timestamp format at : https://support.thoughtindustries.com/hc/article_attachments/1500010528401/ISODateFormatDiagram.png
+# See timestamp format at : https://support.thoughtindustries.com/hc/article_attachments/1500010528401/ISODateFormatDiagram.png
 
