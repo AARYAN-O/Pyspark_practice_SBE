@@ -10,7 +10,7 @@ df.printSchema()
 
 df=df.withColumn("new_column",to_date("date"))
 
-df.printSchema
+df.printSchema()
 
 # Note that there is something like timestamptype in pyspark too.
 # 1. StringType: For strings.
