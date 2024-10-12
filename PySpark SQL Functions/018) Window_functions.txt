@@ -1,0 +1,17 @@
+WINDOW FUNCTIONS USAGE & SYNTAX	PYSPARK WINDOW FUNCTIONS DESCRIPTION
+row_number()	Returns a sequential number starting from 1 within a window partition
+rank()	Returns the rank of rows within a window partition, with gaps.
+percent_rank()	Returns the percentile rank of rows within a window partition.
+dense_rank()	Returns the rank of rows within a window partition without any gaps. Where as Rank() returns rank with gaps.
+ntile(n)	Returns the ntile id in a window partition
+cume_dist()	Returns the cumulative distribution of values within a window partition
+lag(e, offset)
+lag(columnname, offset)
+lag(columnname, offset, defaultvalue)	In PySpark, the lag() function retrieves the value of a column from a preceding row 
+within the same window. It enables users to compare values across adjacent rows and perform calculations based on the 
+difference or relationship between consecutive values in a DataFrame.
+lead(columnname, offset)
+lead(columnname, offset)
+lead(columnname, offset, defaultvalue)	The lead() function in PySpark retrieves the value of a column from a succeeding 
+row within the same window. It enables users to access values ahead of the current row and perform comparisons or calculations
+based on future values in a DataFrame.
