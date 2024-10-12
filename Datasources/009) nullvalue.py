@@ -12,3 +12,10 @@ df=spark.read.format("csv").option("header","true").option("nullValue","NA").opt
 # John	25	"""""""New York"""""""
 # Jane	NA	"""""""San Francisco"""""""
 # Jake	null	"""""""Boston"""""""
+
+# But we were expecting it to come as :
+
+# Name	Age	City
+# John	25	"""""""New York"""""""
+# Jane	null	"""""""San Francisco"""""""
+# Jake	null	"""""""Boston"""""""
