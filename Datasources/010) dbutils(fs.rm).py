@@ -9,6 +9,7 @@ dbutils.fs.rm("dbfs:/output/new_data",True)
 
 # Now , in case , the recurse=False , then if the directory is empty , then it will throw an error.Otherwise , it will
 # not throw an error .
+# (By default the value of recurse is False)
 
 # Note that this will give us an output of True , when the file can be deleted or removed and will give an output of False ,
 # when the file can be deleted or removed.
