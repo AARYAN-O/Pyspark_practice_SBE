@@ -18,6 +18,8 @@ df=spark.createDataFrame(data,schema)
 
 df=df.withColumn("date column", current_date())
 
+# when we use negative number of months , it will subtract
+
 df=df.withColumn("subtracted_month",add_months(df["date column"],-1))
 
 df.display()
