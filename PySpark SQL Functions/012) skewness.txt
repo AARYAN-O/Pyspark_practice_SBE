@@ -1,0 +1,3 @@
+// Skewness is a statistical measure that describes the asymmetry of the distribution of values in a dataset.
+// It indicates whether the data points are skewed to the left (negative skew) or the right (positive skew) relative to the
+// mean.
