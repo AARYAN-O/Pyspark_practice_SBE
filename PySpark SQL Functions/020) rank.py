@@ -1,3 +1,5 @@
+# this leaves gaps when there are ties
+
 from pyspark.sql.window import Window
 from pyspark.sql.functions import rank 
 
