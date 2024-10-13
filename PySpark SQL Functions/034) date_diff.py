@@ -21,3 +21,5 @@ df=df.withColumn("new column",current_date()).withColumn("new column2",current_d
 df=df.withColumn("date diff",datediff("new column","new column2"))
 
 df.display()
+
+# Note that the syntax of datediff is like datediff(end_date,start_date)
