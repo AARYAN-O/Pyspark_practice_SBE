@@ -21,3 +21,5 @@ df=df.withColumn("date_1",current_date()+1).withColumn("date_2",current_date())
 df=df.withColumn("months_between",months_between("date_1","date_2"))
 
 df.display()
+
+# months_between(end,start)
