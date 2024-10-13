@@ -1,0 +1,15 @@
+# Apache Parquet file is a columnar storage format available to any project in the Hadoop ecosystem, regardless of the 
+# choice of data processing framework, data model, or programming language.
+
+# Advantages:
+# While querying columnar storage, it skips the nonrelevant data very quickly, making faster query execution. As a result 
+# aggregation queries consume less time compared to row-oriented databases.
+
+# It is able to support advanced nested data structures.
+
+# Parquet supports efficient compression options and encoding schemes.
+
+# Pyspark SQL provides support for both reading and writing Parquet files that automatically capture the schema of the 
+# original data, It also reduces data storage by 75% on average. Pyspark by default supports Parquet in its library hence we
+# don’t need to add any dependency libraries.
+
