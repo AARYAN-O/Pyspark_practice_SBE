@@ -7,3 +7,4 @@ df1=spark.read.format("parquet").load("dbfs:/output/sales_us/new_users.parquet")
 df1.display()
 
 # overwrite option will check if something exists in the path of the file, if it exists it gets overwritten .
+# If it does not exist , then a new file will get created.
