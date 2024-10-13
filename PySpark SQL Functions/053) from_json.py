@@ -13,3 +13,9 @@ df.printSchema()
 df=df.withColumn("json_col",from_json(df.value,MapType(StringType(),StringType())))
 
 df.display()
+
+# from json function is used to convert the json string into structType or MapType.
+
+
+
+
