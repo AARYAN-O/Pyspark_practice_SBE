@@ -13,3 +13,5 @@
 # original data, It also reduces data storage by 75% on average. Pyspark by default supports Parquet in its library hence we
 # don’t need to add any dependency libraries.
 
+# Is Parquet format by default compressed ?
+# Yes , parquet is by default compressed and it is compressed with the help of various algorithms and optimizations
