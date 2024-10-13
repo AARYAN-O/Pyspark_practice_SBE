@@ -20,4 +20,6 @@ df=df.withColumn("date_column",current_date())
 
 df=df.withColumn("next_day after date_column",next_day("date_column","Monday"))
 
+# Note that the second parameter should be a string
+
 df.display()
