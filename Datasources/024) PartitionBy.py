@@ -7,3 +7,5 @@ df.display()
 
 # The partitions will already get created in the catalog => dbfs =>filestore=> output file => you will find list of 
 # countries because of parititions.
+
+# Note that the partitionBy will make sure that the data structure from row to columnar style.
