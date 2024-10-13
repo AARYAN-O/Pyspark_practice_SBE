@@ -3,3 +3,5 @@
 
 
 // Refer to problems - 17,18,19,20,21
+
+// Note : Mode is used after write in python
