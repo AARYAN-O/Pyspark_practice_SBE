@@ -1,2 +1,5 @@
 // There are 4 writing modes
 // overwrite”, “append”, “ignore”, and “error”
+
+
+// Refer to problems - 17,18,19,20,21
