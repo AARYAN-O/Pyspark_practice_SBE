@@ -20,4 +20,6 @@ df=df.withColumn("date column",current_date())
 
 df=df.withColumn("day of week",dayofweek("date column"))
 
+# Note here we get the dayofweek as 1 for Sunday , 2 for Monday and so on....
+
 df.display()
