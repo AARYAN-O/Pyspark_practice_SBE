@@ -27,3 +27,10 @@ df.display()
 # stored as file_type 
 # location location_of_file 
 # can be used inside the hive queries as well.
+
+# For using pyspark in context of hive tables , we need to :
+
+# use enableHiveSupport and use spark.sql
+# save dataframes to hive table.
+
+
