@@ -5,3 +5,6 @@
 df=spark.read.format("json").option("header","true").option("multiline","true").option("compression","gzip").load("dbfs:/FileStore/*.json")
 
 df.display()
+
+# Different types of encoding in pyspark:
+# Snappy, Gzip, LZO, and Bzip2
