@@ -22,3 +22,8 @@ df.display()
 # 	temp_view	true
 
 # Note : The hive tables are created inside catalog==> databases==> default
+
+# There are a few queries parts that can be used using the hive table as well:
+# stored as file_type 
+# location location_of_file 
+# can be used inside the hive queries as well.
