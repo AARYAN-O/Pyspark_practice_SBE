@@ -20,3 +20,5 @@ df.display()
 # database	tableName	isTemporary
 # default	employees	false
 # 	temp_view	true
+
+# Note : The hive tables are created inside catalog==> databases==> default
