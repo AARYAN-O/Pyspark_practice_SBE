@@ -16,5 +16,12 @@ df1.display()
 # The data here is stored inside spark's warehouse directory.
 
 # What are external tables ?
-
 # These are tables pointing to data stored externally (in external systems like hdfs, s3, azure blob, etc)
+
+# When we use the saveAsTable option , it creates a metadata as well as warehouse.
+
+# When we do saveAsTable() , what is the default compression type ?
+# Its Snappy.
+
+# Where can we find the temp table saved ?
+# Its saved inside catalog => user/hive/warehouse
