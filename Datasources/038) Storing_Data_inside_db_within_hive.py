@@ -10,3 +10,4 @@ spark.read.table("temp_table").display()
 
 # Note : using spark.sql() , the data gets stored by default in the parquet format.
 # parquet is columnar storage file and is used for data processing usually
+
