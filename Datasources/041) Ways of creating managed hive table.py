@@ -13,3 +13,11 @@ df.write.mode("overwrite").format("orc").saveAsTable("my_managed_table")
 spark.sql("describe extended my_managed_table").display()
 
 # Note : When we do paritionBy , we will get everything vconverted to the columnar format
+
+# Note that when we use "stored as" , we need to mention the schema as well.
+
+# create or replace is not present in pyspark.
+
+# with or without "stored as" , we will be getting the table stored as managed table.
+
+
