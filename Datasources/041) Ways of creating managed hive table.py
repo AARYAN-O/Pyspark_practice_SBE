@@ -16,7 +16,7 @@ spark.sql("describe extended my_managed_table").display()
 
 # Note that when we use "stored as" , we need to mention the schema as well.
 
-# create or replace is not present in pyspark.
+# create or replace is not present in pyspark - but in turn we can use if not exists.
 
 # with or without "stored as" , we will be getting the table stored as managed table.
 
