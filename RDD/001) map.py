@@ -10,3 +10,5 @@ def func(x):
 
 rdd2=rdd.map(lambda x: func(x))
 print(rdd2.collect())
+
+# Note : Map function goes hand in hand with the other lambda function.
