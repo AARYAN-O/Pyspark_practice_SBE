@@ -1,0 +1,2 @@
+# For large datasets we should not use collect(), instead you may use take(100) or take(some_integer) in order to 
+# check that some values are correct.
