@@ -1,0 +1,17 @@
+// PySpark partition is a way to split a large dataset into smaller datasets based on one or more partition keys. 
+// When you create a DataFrame from a file/table, based on certain parameters PySpark creates the DataFrame with a certain
+// number of partitions in memory. This is one of the main advantages of PySpark DataFrame over Pandas DataFrame. 
+
+// Transformations on partitioned data run faster as they execute transformations parallelly for each partition.
+
+// PySpark supports partition in two ways; partition in memory (DataFrame) and partition on the disk (File system).
+
+//Partition in memory: You can partition or repartition the DataFrame by calling repartition() or coalesce() transformations.
+
+//Partition on disk: While writing the PySpark DataFrame back to disk, you can choose how to partition the data based on 
+//columns using partitionBy() of pyspark.sql.DataFrameWriter. This is similar to Hives partitions scheme.
+
+//What is in-memory computing ? --> In-memory computing means computations happen inside RAM and not inside the disk.
+
+//repartition and coalesce happen inside the disk as well as they can happen inside the memory.
+
