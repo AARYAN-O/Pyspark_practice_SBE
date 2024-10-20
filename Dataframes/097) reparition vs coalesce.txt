@@ -1,0 +1,3 @@
+# Repartition : Full shuffle , increases as well as decreases parititons , slow (due to shuffle) , distribution is uniform
+# coalesce : avoids full shuffle , decreases partitions , faster , distribution is non-uniform.
+
