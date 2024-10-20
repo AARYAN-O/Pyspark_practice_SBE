@@ -1,0 +1,12 @@
+// When creating partitions you have to be very cautious with the number of partitions you would create, as having too many 
+// partitions creates too many sub-directories on HDFS which brings unnecessary and overhead to NameNode (if you are using 
+// Hadoop) since it must keep all metadata for the file system in memory.
+
+// Consider a scenario where you possess a US census table featuring zip codes, cities, states, and additional columns.
+// Employing state as a partition key divides the table into approximately 50 partitions. Consequently, when seeking
+// a zip code within a specific state (e.g., state=’CA’ and zipCode=’92704′), the process is expedited as it solely 
+// necessitates scanning within the directory associated with the ‘CA’ state partition.
+
+// Partition on zipcode may not be a good option as you might end up with too many partitions.
+
+// Another good example of partition is in the Date column. Ideally, you should partition on Year/Month but not on a date.
