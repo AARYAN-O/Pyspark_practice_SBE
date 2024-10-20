@@ -15,4 +15,8 @@ df=df.repartition(2)
 
 print(df.rdd.getNumPartitions())
 
+df=df.repartition(6)
+
+print(df.rdd.getNumPartitions())
+
 # Note : We need to collect the repartitioned dataframe as well
