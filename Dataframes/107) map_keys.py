@@ -15,3 +15,4 @@ df=df.select("name",map_keys(df.properties))
 df.display()
 
 # The above will return the functions values as properties mapped with the name.
+# The df.select statement will return the dataframe with selected number of columns only
